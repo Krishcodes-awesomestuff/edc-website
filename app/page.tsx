@@ -145,9 +145,9 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-4xl md:text-5xl font-bold text-red-600 leading-tight mb-8">
-                  Nurturing Entrepreneurial Spirit
+                From Classrooms To Unicorns,
                   <br />
-                  Through Innovation And Action.
+                  Empowering Student Visionaries.
                 </h3>
               </div>
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
