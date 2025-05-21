@@ -1,6 +1,8 @@
 import Image from "next/image"
 import Link from "next/link"
 import NavMenu from "@/components/nav-menu"
+import NewsletterForm from "@/components/newsletter-form"
+import ContactForm from "@/components/contact-form"
 
 export default function Home() {
   return (
@@ -226,8 +228,8 @@ export default function Home() {
       <section id="team" className="bg-zinc-900 py-16 md:py-24">
         <div className="container mx-auto px-4">
           <h2 className="text-4xl font-bold text-red-600 mb-12 text-center">Our Team</h2>
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
-            {[1, 2, 3, 4, 5, 6, 7, 8].map((item) => (
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+            {[1, 2, 3].map((item) => (
               <div key={item} className="text-center">
                 <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 bg-zinc-800">
                   <Image
@@ -238,10 +240,26 @@ export default function Home() {
                     className="w-full h-full object-cover"
                   />
                 </div>
-                <h3 className="text-lg font-medium">Joel Sam</h3>
-                <p className="text-red-600">President</p>
+                <h3 className="text-lg font-medium">
+                  {item === 1 && "Joel"}
+                  {item === 2 && "Manish"}
+                  {item === 3 && "Jayden"}
+                </h3>
+                <p className="text-red-600">
+                  {item === 1 && "President"}
+                  {item === 2 && "Vice President"}
+                  {item === 3 && "CEO"}
+                </p>
               </div>
             ))}
+          </div>
+          <div className="text-center mt-12">
+            <Link
+              href="/team"
+              className="px-8 py-3 border border-red-600 text-red-600 rounded-full font-medium hover:bg-red-600 hover:text-white transition-colors inline-block"
+            >
+              Meet the Full Team
+            </Link>
           </div>
         </div>
       </section>
@@ -267,10 +285,10 @@ export default function Home() {
             </div>
             <div className="rounded-lg overflow-hidden">
               <Image
-                src="/placeholder.svg?height=400&width=600"
+                src="/placeholder.svg?height=200&width=200"
                 alt="Incubation Centre"
-                width={600}
-                height={400}
+                width={200}
+                height={200}
                 className="w-full h-full object-cover"
               />
             </div>
@@ -333,60 +351,7 @@ export default function Home() {
               </div>
             </div>
             <div>
-              <form className="space-y-6">
-                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
-                  <div>
-                    <label htmlFor="name" className="block mb-2 text-sm font-medium">
-                      Name
-                    </label>
-                    <input
-                      type="text"
-                      id="name"
-                      className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Your name"
-                    />
-                  </div>
-                  <div>
-                    <label htmlFor="email" className="block mb-2 text-sm font-medium">
-                      Email
-                    </label>
-                    <input
-                      type="email"
-                      id="email"
-                      className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
-                      placeholder="Your email"
-                    />
-                  </div>
-                </div>
-                <div>
-                  <label htmlFor="subject" className="block mb-2 text-sm font-medium">
-                    Subject
-                  </label>
-                  <input
-                    type="text"
-                    id="subject"
-                    className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="Subject"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block mb-2 text-sm font-medium">
-                    Message
-                  </label>
-                  <textarea
-                    id="message"
-                    rows={5}
-                    className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
-                    placeholder="Your message"
-                  ></textarea>
-                </div>
-                <button
-                  type="submit"
-                  className="px-8 py-3 bg-red-600 text-white rounded-full font-medium hover:bg-red-700 transition-colors"
-                >
-                  Send Message
-                </button>
-              </form>
+              <ContactForm />
             </div>
           </div>
         </div>
@@ -514,19 +479,8 @@ export default function Home() {
               <p className="text-gray-400 text-sm">
                 Subscribe to our newsletter for updates on events and opportunities.
               </p>
-              <form className="mt-4 flex">
-                <input
-                  type="email"
-                  placeholder="Your email"
-                  className="px-4 py-2 bg-zinc-800 border border-zinc-700 rounded-l-lg focus:outline-none focus:ring-2 focus:ring-red-600 w-full"
-                />
-                <button
-                  type="submit"
-                  className="px-4 py-2 bg-red-600 text-white rounded-r-lg hover:bg-red-700 transition-colors"
-                >
-                  Subscribe
-                </button>
-              </form>
+              <NewsletterForm />
+              {/* Remove duplicate form below */}
             </div>
           </div>
           <div className="border-t border-zinc-800 pt-8 text-center text-sm text-gray-500">
