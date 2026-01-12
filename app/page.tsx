@@ -1,6 +1,6 @@
 import Image from "next/image"
 import Link from "next/link"
-import NavMenu from "@/components/nav-menu"
+
 import NewsletterForm from "@/components/newsletter-form"
 import ContactForm from "@/components/contact-form"
 
@@ -12,7 +12,6 @@ export default function Home() {
         <div className="w-24">
           <Image src="/images/ecell-logo.png" alt="E-Cell Logo" width={80} height={80} className="object-contain" />
         </div>
-        <NavMenu />
       </header>
 
       {/* Hero Section */}
@@ -147,7 +146,7 @@ export default function Home() {
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
               <div>
                 <h3 className="text-4xl md:text-5xl font-bold text-red-600 leading-tight mb-8">
-                From Classrooms To Unicorns,
+                  From Classrooms To Unicorns,
                   <br />
                   Empowering Student Visionaries.
                 </h3>
@@ -164,9 +163,9 @@ export default function Home() {
                 </div>
                 <div>
                   <p className="text-gray-300">
-                  We envision a future where every student at Rajalakshmi Engineering College has the opportunity to
-                  explore entrepreneurship. Our goal is to be the catalyst that transforms classroom knowledge into
-                  real-world business success, creating a generation of job creators rather than job seekers.
+                    We envision a future where every student at Rajalakshmi Engineering College has the opportunity to
+                    explore entrepreneurship. Our goal is to be the catalyst that transforms classroom knowledge into
+                    real-world business success, creating a generation of job creators rather than job seekers.
                   </p>
                 </div>
               </div>
