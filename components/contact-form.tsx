@@ -18,6 +18,7 @@ export default function ContactForm() {
             id="name"
             className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
             placeholder="Your name"
+            suppressHydrationWarning
           />
         </div>
         <div>
@@ -29,6 +30,7 @@ export default function ContactForm() {
             id="email"
             className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
             placeholder="Your email"
+            suppressHydrationWarning
           />
         </div>
       </div>
@@ -41,6 +43,7 @@ export default function ContactForm() {
           id="subject"
           className="w-full px-4 py-3 bg-zinc-800 border border-zinc-700 rounded-lg focus:outline-none focus:ring-2 focus:ring-red-600"
           placeholder="Subject"
+          suppressHydrationWarning
         />
       </div>
       <div>
@@ -57,6 +60,7 @@ export default function ContactForm() {
       <button
         type="submit"
         className="px-8 py-3 bg-red-600 text-white rounded-full font-medium hover:bg-red-700 transition-colors"
+        suppressHydrationWarning
       >
         Send Message
       </button>

@@ -32,7 +32,7 @@ export default function NavMenu() {
 
   return (
     <>
-      <button onClick={toggleMenu} className="z-50 relative" aria-label={isOpen ? "Close menu" : "Open menu"}>
+      <button onClick={toggleMenu} className="z-50 relative" aria-label={isOpen ? "Close menu" : "Open menu"} suppressHydrationWarning>
         {isOpen ? <X className="h-8 w-8" /> : <Menu className="h-8 w-8" />}
       </button>
 
