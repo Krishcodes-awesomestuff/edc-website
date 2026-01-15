@@ -366,7 +366,7 @@ export default function Home() {
                 alt="E-Cell Logo"
                 width={120}
                 height={60}
-                className="object-contain mb-4"
+                className="object-contain mb-4 w-auto h-auto"
               />
               <p className="text-gray-400 text-sm">
                 Empowering student entrepreneurs to build sustainable startups and drive impactful innovation.

@@ -62,6 +62,13 @@ export default function ContactForm() {
 
   return (
     <form className="space-y-6" onSubmit={handleSubmit}>
+      {/* Hidden field for Web3Forms access key */}
+      <input 
+        type="hidden" 
+        name="access_key" 
+        value={process.env.NEXT_PUBLIC_WEB3FORMS_KEY || '9b87ee11-af21-41e3-9bad-eccc1b230bcd'} 
+      />
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
         <div>
           <label htmlFor="name" className="block mb-2 text-sm font-medium">

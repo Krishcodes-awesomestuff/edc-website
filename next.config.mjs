@@ -8,6 +8,12 @@ const nextConfig = {
   },
   images: {
     unoptimized: true,
+    localPatterns: [
+      {
+        pathname: '/placeholder.svg',
+        search: '**',
+      },
+    ],
   },
 }
 
