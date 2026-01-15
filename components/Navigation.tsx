@@ -142,9 +142,9 @@ export default function Navigation() {
                     </div>
 
                     <div className="flex gap-6">
-                        <a href="#" className="text-sm uppercase tracking-widest hover:text-white/60 transition-colors">Instagram</a>
-                        <a href="#" className="text-sm uppercase tracking-widest hover:text-white/60 transition-colors">LinkedIn</a>
-                        <a href="#" className="text-sm uppercase tracking-widest hover:text-white/60 transition-colors">Twitter</a>
+                        <a href="https://www.instagram.com/eidc_rec/" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-white/60 transition-colors">Instagram</a>
+                        <a href="https://www.linkedin.com/company/e-cell-rec/?originalSubdomain=in" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-white/60 transition-colors">LinkedIn</a>
+                        <a href="https://www.facebook.com/ecellrec/" target="_blank" rel="noopener noreferrer" className="text-sm uppercase tracking-widest hover:text-white/60 transition-colors">Facebook</a>
                     </div>
                 </div>
 
