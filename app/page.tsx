@@ -214,10 +214,10 @@ export default function Home() {
           {/* View More button */}
           <div className="text-center mt-12">
             <Link
-              href="/events"
+              href="#contact"
               className="px-8 py-3 border border-red-600 text-red-600 rounded-full font-medium hover:bg-red-600 hover:text-white transition-colors inline-block"
             >
-              View More Events
+              Contact Us for Event Details
             </Link>
           </div>
         </div>
