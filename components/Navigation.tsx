@@ -116,6 +116,7 @@ export default function Navigation() {
                 className="fixed top-8 right-8 z-[60] flex flex-col justify-center items-end gap-1.5 w-12 h-12 p-2 mix-blend-difference cursor-pointer group pointer-events-auto"
                 aria-label="Toggle Menu"
                 suppressHydrationWarning
+                style={{ transform: 'translate3d(0, 0, 0)', willChange: 'transform' }}
             >
                 <span className={`h-[2px] bg-white transition-all duration-300 ease-out group-hover:w-full ${isOpen ? 'w-full rotate-45 translate-y-2' : 'w-8'}`}></span>
                 <span className={`h-[2px] bg-white transition-all duration-300 ease-out ${isOpen ? 'opacity-0' : 'w-full'}`}></span>
