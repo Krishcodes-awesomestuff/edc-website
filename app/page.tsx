@@ -232,7 +232,7 @@ export default function Home() {
               <div key={item} className="text-center">
                 <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 bg-zinc-800">
                   <Image
-                    src="/placeholder.svg?height=160&width=160"
+                    src={item === 1 ? "/core/joel.JPG" : item === 3 ? "/core/Jayden.PNG" : "/placeholder.svg?height=160&width=160"}
                     alt={`Team Member ${item}`}
                     width={160}
                     height={160}

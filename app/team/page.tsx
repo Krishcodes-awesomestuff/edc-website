@@ -2,15 +2,15 @@ import Image from "next/image"
 import Link from "next/link"
 
 const teamMembers = [
-  { name: "Joel", role: "President" },
-  { name: "Manish", role: "Vice President" },
-  { name: "Jayden", role: "CEO" },
-  { name: "Abhijith", role: "COO" },
-  { name: "Jitheesh", role: "CTO" },
-  { name: "Nitin", role: "Secretary" },
-  { name: "Monish", role: "Joint Secretary" },
-  { name: "Hari Balaji", role: "CFO" },
-  { name: "Priya", role: "Chief Director" },
+  { name: "Joel", role: "President", image: "/core/joel.JPG" },
+  { name: "Manish", role: "Vice President", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Jayden", role: "CEO", image: "/core/Jayden.PNG" },
+  { name: "Abhijith", role: "COO", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Jitheesh", role: "CTO", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Nitin", role: "Secretary", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Monish", role: "Joint Secretary", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Hari Balaji", role: "CFO", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Priya", role: "Chief Director", image: "/placeholder.svg?height=160&width=160" },
 ]
 
 export default function TeamPage() {
@@ -24,7 +24,7 @@ export default function TeamPage() {
             <div key={index} className="text-center">
               <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 bg-zinc-800">
                 <Image
-                  src="/placeholder.svg?height=160&width=160"
+                  src={member.image}
                   alt={`${member.name} - ${member.role}`}
                   width={160}
                   height={160}
