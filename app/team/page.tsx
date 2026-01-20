@@ -5,11 +5,10 @@ const teamMembers = [
   { name: "Joel", role: "President", image: "/core/joel.JPG" },
   { name: "Manish", role: "Vice President", image: "/placeholder.svg?height=160&width=160" },
   { name: "Jayden", role: "CEO", image: "/core/Jayden.PNG" },
-  { name: "Abhijith", role: "COO", image: "/placeholder.svg?height=160&width=160" },
-  { name: "Jitheesh", role: "CTO", image: "/placeholder.svg?height=160&width=160" },
-  { name: "Nitin", role: "Secretary", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Abhijith", role: "COO", image: "/core/Abhijit.png" },
+  { name: "Nitin", role: "Secretary", image: "/core/Nithin.jpg" },
   { name: "Monish", role: "Joint Secretary", image: "/placeholder.svg?height=160&width=160" },
-  { name: "Hari Balaji", role: "CFO", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Hari Balaji", role: "CFO", image: "/core/Haribalaji.jpg" },
   { name: "Priya", role: "Chief Director", image: "/placeholder.svg?height=160&width=160" },
 ]
 
