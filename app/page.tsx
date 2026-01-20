@@ -77,7 +77,7 @@ export default function Home() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
                 <div className="bg-white rounded-lg overflow-hidden">
                   <Image
-                    src="/placeholder.svg?height=300&width=300"
+                    src="/core/sampath.jpg"
                     alt="E-Cell Story"
                     width={150}
                     height={150}
