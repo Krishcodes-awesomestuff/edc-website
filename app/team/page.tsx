@@ -3,13 +3,13 @@ import Link from "next/link"
 
 const teamMembers = [
   { name: "Joel", role: "President", image: "/core/joel.JPG" },
-  { name: "Manish", role: "Vice President", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Manish", role: "Vice President", image: "/core/Manish.JPG" },
   { name: "Jayden", role: "CEO", image: "/core/Jayden.PNG" },
   { name: "Abhijith", role: "COO", image: "/core/Abhijit.png" },
   { name: "Nitin", role: "Secretary", image: "/core/Nithin.jpg" },
-  { name: "Monish", role: "Joint Secretary", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Monish", role: "Joint Secretary", image: "/core/Monish.JPG" },
   { name: "Hari Balaji", role: "CFO", image: "/core/Haribalaji.jpg" },
-  { name: "Priya", role: "Chief Director", image: "/placeholder.svg?height=160&width=160" },
+  { name: "Priya", role: "Chief Director", image: "/core/Priyadarshini.jpg" },
 ]
 
 export default function TeamPage() {

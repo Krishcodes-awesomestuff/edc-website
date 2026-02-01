@@ -197,7 +197,7 @@ export default function Home() {
                     {item === 2 && "EDII - Bootcamp"}
                     {item === 3 && "Innovation Summit"}
                     {item === 4 && "Startup Spark - Grand Hackathon"}
-                    {item === 5 && "TBH"}
+                    {item === 5 && "Workshop on Design Thinking from Campus X"}
                     {item === 6 && "TBH"}
                   </h3>
                   <p className="text-gray-400 mb-4">
@@ -232,7 +232,7 @@ export default function Home() {
               <div key={item} className="text-center">
                 <div className="w-40 h-40 rounded-full overflow-hidden mx-auto mb-4 bg-zinc-800">
                   <Image
-                    src={item === 1 ? "/core/joel.JPG" : item === 3 ? "/core/Jayden.PNG" : "/placeholder.svg?height=160&width=160"}
+                    src={item === 1 ? "/core/joel.JPG" : item === 2 ? "/core/Manish.JPG" : "/core/Jayden.PNG"}
                     alt={`Team Member ${item}`}
                     width={160}
                     height={160}
